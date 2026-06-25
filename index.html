@@ -10,7 +10,31 @@
   </head>
 
   <body class="body">
-        <div class="page-wrap">
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <button id="theme-toggle" type="button" aria-label="Toggle light/dark mode">
+      <svg
+        width="35px"
+        height="35px"
+        version="1.1"
+        viewBox="0 0 100 100"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <clipPath id="a">
+            <path d="m18.512 18.512h62.977v62.977h-62.977z"/>
+          </clipPath>
+        </defs>
+        <g clip-path="url(#a)">
+          <path
+            d="m65.098 68.164c-9.2812 7.7266-23.09 7.2422-31.797-1.4648-8.707-8.7031-9.1953-22.516-1.4648-31.793 0.74609-0.89844 2.1016-0.96875 2.9258-0.14453l30.473 30.477c0.82422 0.82422 0.75391 2.1797-0.13672 2.9258m7.168-40.43c-12.297-12.297-32.234-12.297-44.531 0-12.297 12.301-12.297 32.234 0 44.531s32.234 12.297 44.531 0 12.297-32.23 0-44.531"
+            fill="#333"
+            fill-rule="evenodd"
+          />
+        </g>
+      </svg>
+    </button>
+  <div class="page-wrap">
   <header class="header">
             <h1><a href="#">View Pointe</a></h1>
         <div class="hero">
@@ -27,7 +51,7 @@
         </div>
   </header>
 
-    <main>
+    <main id="main-content">
       <h2>Merch</h2>
   <div class="card">
   <img src="front.png" alt="black t shirt with view pointe name on it">
@@ -85,8 +109,12 @@
     <footer>
       <p>&copy; 2026 View Pointe Music. All rights reserved.</p>
       <div class="social-icons">
-        <a href="https://www.instagram.com/viewpointemusic/" target="_blank"><img src="instagram.png" alt="Instagram logo" aria-label="Instagram"></a>
-        <a href="https://www.facebook.com/viewpointemusic/" target="_blank"><img src="facebook.png" alt="Facebook logo" aria-label="Facebook"></a>
+    <ul>
+      <li><a href="#twitter">Twitter/X</a></li>
+      <li><a href="#instagram">Instagram</a></li>
+      <li><a href="#youtube">YouTube</a></li>
+      <li><a href="#tiktok">TikTok</a></li>
+    </ul>
       </div>
     </footer>
     </div>
