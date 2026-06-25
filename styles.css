@@ -46,3 +46,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+.page-wrap {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
