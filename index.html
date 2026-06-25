@@ -50,18 +50,28 @@
   <p>Compact disc with View Pointe's latest EP</p>
   <button type="button">Add to Cart</button>
 </div>
-  <h2>Contact Us</h2>
+
   <section id="contact-form">
+      <h2>Join our fan club</h2>
     <form action="submit_form.php" method="post">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+		<label for="name">Name<span class="required" aria-hidden="true">*</span></label>
+		<input type="text" id="name" name="name" autocomplete="name" required>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+    <label for="email">Email<span class="required" aria-hidden="true">*</span></label>
+    <input type="email" id="email" name="email" autocomplete="email" required>
 
-      <label for="message">Texts:</label>
-      <input type="text" id="message" name="message" required>
+    <label for="phone">Phone<span class="required" aria-hidden="true">*</span></label>
+    <input type="tel" id="phone" name="phone" autocomplete="tel" required>
 
+      <fieldset>
+			<legend>Preferred Contact Method<span class="required" aria-hidden="true">*</span></legend>
+			<input type="radio" id="pref-phone" name="pref-contact" value="pref-phone" checked>
+			<label for="pref-phone">Phone</label>
+
+			<input type="radio" id="pref-email" name="pref-contact" value="pref-email">
+			<label for="pref-email">Email</label>
+
+      </fieldset>
       <button type="submit">Submit</button>
     </form>
 
