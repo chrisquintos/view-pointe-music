@@ -11,13 +11,13 @@
 
   <body class="body">
         <div class="page-wrap">
-  <header>
-
+  <header class="header">
+            <h1><a href="#">View Pointe</a></h1>
         <div class="hero">
         <img src="viewpointe-38.jpg" alt="guy playing guitar on top of a car" class="header-image">
 
         <nav class="nav">
-            <h1><a href="#">View Pointe</a></h1>
+
             <ul class="nav-links">
                 <li><a href="#">Music</a></li>
                 <li><a href="#">Merch</a></li>
@@ -31,35 +31,52 @@
       <h2>Merch</h2>
   <div class="card">
   <img src="front.png" alt="black t shirt with view pointe name on it">
-  <h1>Black Band T-shirt</h1>
+  <h3>Black Band T-shirt</h3>
   <p class="price">$19.99</p>
   <p>Oversized fit black t-shirt with View Pointe</p>
-  <p><button type="button">Add to Cart</button></p>
+  <button type="button">Add to Cart</button>
 </div>
   <div class="card">
   <img src="croppedshirt.png" alt="black cropped t-shirt with view pointe name and logo on it">
-  <h1>Black Cropped Band T-shirt</h1>
+  <h3>Black Cropped Band T-shirt</h3>
   <p class="price">$15.99</p>
   <p>Cropped fit black t-shirt with View Pointe logo</p>
-  <p><button type="button">Add to Cart</button></p>
+  <button type="button">Add to Cart</button>
 </div>
   <div class="card">
   <img src="cdartwork.png" alt="album with cd cover">
-  <h1>All Talk EP</h1>
+  <h3>All Talk EP</h3>
   <p class="price">$9.99</p>
   <p>Compact disc with View Pointe's latest EP</p>
-  <p><button type="button">Add to Cart</button></p>
+  <button type="button">Add to Cart</button>
 </div>
+  <h2>Contact Us</h2>
+  <section id="contact-form">
+    <form action="submit_form.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Texts:</label>
+      <input type="text" id="message" name="message" required>
+
+      <button type="submit">Submit</button>
+    </form>
+
+  </section>
 
 
-    </main>
+
+
+</main>
 
     <footer>
-      <p>&copy; 2021 View Pointe Music. All rights reserved.</p>
+      <p>&copy; 2026 View Pointe Music. All rights reserved.</p>
       <div class="social-icons">
-        <a href="https://www.instagram.com/viewpointemusic/" target="_blank"><img src="instagram.png" alt="Instagram logo"></a>
-        <a href="https://www.facebook.com/viewpointemusic/" target="_blank"><img src="facebook.png" alt="Facebook logo"></a>
-        <a href="https://twitter.com/viewpointemusic" target="_blank"><img src="twitter.png" alt="Twitter logo"></a>
+        <a href="https://www.instagram.com/viewpointemusic/" target="_blank"><img src="instagram.png" alt="Instagram logo" aria-label="Instagram"></a>
+        <a href="https://www.facebook.com/viewpointemusic/" target="_blank"><img src="facebook.png" alt="Facebook logo" aria-label="Facebook"></a>
       </div>
     </footer>
     </div>
