@@ -55,7 +55,9 @@ table {
 	--sky-blue: #5890D3;
     --flower-pink: #FEEBCA;
 	--white: #fffcfe;
+  --black: #231a18;
 	--font-family: 'Anybody', sans-serif;
+
 
 }
 *{
@@ -85,7 +87,24 @@ table {
   white-space: nowrap;
   border: 0;
 }
-
+/* Manual Light/Dark Mode Styles*/
+body.light-mode {
+  background-color: var(--background-color);
+  color: var(--sky-blue);
+}
+body.dark-mode {
+  background-color: var(--black);
+  color: var(--white);
+}
+#theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--watchdog-white);
+  border: 1px solid var(--blue-bulletin);
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
 #theme-toggle {
   position: absolute;
   top: 1em;
