@@ -54,6 +54,7 @@ table {
     --card-color: #D7D1C4;
 	--sky-blue: #5890D3;
     --flower-pink: #FEEBCA;
+	--white: #fffcfe;
 	--font-family: 'Anybody', sans-serif;
 
 }
@@ -95,47 +96,68 @@ table {
   cursor: pointer;
 }
 
-.header{
-    border-bottom: 1px solid var(--flower-pink);
+.header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-}
-.hero-section{
+  z-index: 100;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5rem;
+  padding: 1rem 1.25rem;
 
-    color: var(--flower-pink);
- 
-    padding-bottom: .8em;
-	 position: relative;  
+}
+.hero-section {
+  color: var(--sky-blue);
+  position: relative;
   width: 100%;
+
 }
 .hero-section img {
-width: 100%;
-overflow: hidden;
-height:400px;
-object-fit: cover;
-object-position: 50% 80%;
+  width: 100%;
+  display: block;
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 70%;
+  border-bottom: 1px solid var(--sky-blue);
+}
+.logo {
+  font-family: var(--font-family);
+  font-size: 1.8rem;
+  color: var(--white);
+  margin: 0;
 }
 
 .nav {
-	display: flex;
-	gap: 1em;
-	justify-content: space-around;
-	align-items: stretch;
-	padding: 0.5em 0;
-	color: var(--flower-pink);
+  display: flex;
+  align-items: center;
 }
-ul li a {
-  display: block;
-  color: white;
-  padding: 14px 16px;
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  color: var(--white);
   text-decoration: none;
 }
-.nav a{
-	text-decoration: none;
-	color: var(--flower-pink);
+.nav-links a:hover,
+.nav-links a:focus-visible {
+  background: var(--flower-pink);
+  color: var(--sky-blue);
+  transform: translateY(-1px);
+  outline: none;
 }
+
 body {
   font-family: var(--font-family);
   font-optical-sizing: auto;
@@ -146,15 +168,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
 .page-wrap {
   	max-width: 1280px;
   	width: 100%;
@@ -163,8 +176,22 @@ body {
     overflow: hidden;
 }
 
+h2{
+	font-size: 1.5rem;
+  color: var(--sky-blue);
+  text-align: center;
+  padding: 1rem 0;
+
+}
 
 
+.card {
+  background-color: var(--card-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: box-shadow 0.3s ease-in-out;
+
+}
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
