@@ -4,7 +4,8 @@ const toggleButton = document.getElementById("theme-toggle");
 const iconCart = document.querySelector(".icon-cart");
 const body = document.body;
 const closeCart = document.querySelector(".close");
-let addItem = document.querySelector(".add-to-cart");
+const addItem = document.querySelectorAll(".add-to-cart");
+const cart = [];
 
 
 if (toggleButton) {
@@ -58,13 +59,13 @@ function addToCart(products, id) {
     quantity: 1,
   };
 
-  cartItem.push(cartItem);
+  cart.push(cartItem);
 }
 
-if (addItem) {
-  addItem.addEventListener("click", (event) => {
-    const id = Number(event.target.id);
+
+addItem.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    const id = Number(event.target.dataset.id);
     addToCart(products, id);
   });
-}
-
+});
