@@ -174,7 +174,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings: "wdth" 100;
+  font-variation-settings: "width" 100;
 }
 
 
@@ -193,6 +193,115 @@ h2{
   text-align: center;
   padding: 1rem 0;
 
+}
+.merch {
+  width: 900px;
+  max-width: 90vw;
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+  position: relative;
+}
+
+.svg {
+  width: 30px;
+}
+
+.merch .icon-cart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.merch .icon-cart span {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  background-color: var(--flower-pink);
+  justify-content: center;
+  align-items: center;
+  color: var(--sky-blue);
+  border-radius: 50%;
+  position: absolute;
+  top: 80%;
+  right: -30px;
+  transform: translateY(-50%);
+}
+
+.cartTab {
+  width: 400px;
+  max-width: 90vw;
+  background-color: var(--black);
+  color: var(--card-color);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-rows: 70px 1fr 70px;
+  transform: translateX(100%);
+  transition: transform 0.5s ease;
+  z-index: 1001;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.showCart .cartTab {
+  transform: translateX(0);
+}
+
+.showCart .merch {
+  margin-right: 250px;
+  transition: margin-right 0.5s ease;
+}
+.cartTab .btn{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+
+}
+.cartTab .btn button{
+  background-color: var(--black);
+  border:none;
+  font: var(--font-family);
+  font-weight: 500;
+  cursor: pointer;
+}
+.cartTab .btn .close{
+  background-color: var(--card-color);
+}
+.cartTab .listCart .item img{
+  width:100%;
+}
+.cartTab .listCart .item{
+  display:grid;
+  grid-template-columns: 70px 150px 50px 1fr;
+  gap:10px;
+  text-align: center;
+  align-items: center;
+}
+.listCart .quantity span{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: var(--card-color);
+  color: var(--sky-blue);
+  border-radius: 50%;
+  cursor:pointer;
+}
+.listCart .quantity span:nth-child(2){
+  background-color: transparent;
+  color: var(--card-color);
+}
+
+.listCart .item:nth-child(even){
+  background-color: var(--flower-pink);
+}
+.listCart{
+  overflow: auto;
+}
+.listCart::-webkit-scrollbar{
+  width:0;
 }
 
 
@@ -285,7 +394,7 @@ input{
 	font-size: 1em;
 	padding: 0.25em 0.5em;
 	border: 1px solid #222;
-	height: 1.5em;
+	padding: 0.5em;
 }
 
 fieldset{
@@ -294,7 +403,7 @@ fieldset{
 	margin: 0.75em 0 0.25em 0;
 	width: 98%;
 	display: grid;
-	grid-template-columns: 1fr 3fr 1fr 3fr;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
 }
 
 button[type=submit]{
@@ -305,7 +414,7 @@ button[type=submit]{
 	color: var(--flower-pink);
 	background-color: var(--sky-blue);
 	border: none;
-	font-family: serif;
+	font-family: var(--font-family);
 }
 input:focus, textarea:focus{
 	border-color: var(--sky-blue);
@@ -324,12 +433,15 @@ footer{
   padding: 1rem;
   margin-top: 2rem;
 }
-footer a{
-  color: var(--white);
-  text-decoration: none;
-   display: flex;
+footer ul {
+  display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.75rem;
+}
+footer a{
+  text-decoration: none;
+  color:var(--white);
 }
 
 .footer li {
