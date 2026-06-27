@@ -63,6 +63,8 @@ table {
 *{
 	box-sizing: border-box;
 }
+
+/* SKIP LINK */
 .skip-link {
   position: absolute;
   left: -10000px;
@@ -106,7 +108,7 @@ body.dark-mode {
   border: none;
   cursor: pointer;
 }
-
+/*  HEADER STYLES */
 .header {
   position: absolute;
   top: 0;
@@ -168,7 +170,7 @@ body.dark-mode {
   transform: translateY(-1px);
   outline: none;
 }
-
+/* main content Styles */
 body {
   font-family: var(--font-family);
   font-optical-sizing: auto;
@@ -194,6 +196,8 @@ h2{
   padding: 1rem 0;
 
 }
+
+/* Merch Styles */
 .merch {
   width: 900px;
   max-width: 90vw;
@@ -229,6 +233,7 @@ h2{
   transform: translateY(-50%);
 }
 
+/* Cart Styles */
 .cartTab {
 
   max-width: 90vw;
@@ -300,7 +305,7 @@ h2{
   width:0;
 }
 
-
+/* Card Styles */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -359,6 +364,8 @@ h2{
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+
+/* Form Styles */
 form{
 	display: block;
 	width: 300px;
@@ -422,6 +429,7 @@ input:invalid{
 	border-color: var(--flower-pink);
 }
 
+/* Footer Styles */
 footer{
   background-color: var(--sky-blue);
   color: var(--white);
