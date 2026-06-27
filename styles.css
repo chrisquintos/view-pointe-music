@@ -230,7 +230,7 @@ h2{
 }
 
 .cartTab {
-  width: 400px;
+
   max-width: 90vw;
   background-color: var(--black);
   color: var(--card-color);
@@ -251,10 +251,6 @@ h2{
   transform: translateX(0);
 }
 
-.showCart .merch {
-  margin-right: 250px;
-  transition: margin-right 0.5s ease;
-}
 .cartTab .btn{
   display: grid;
   grid-template-columns: repeat(2,1fr);
