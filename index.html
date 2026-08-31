@@ -42,35 +42,41 @@
         </g>
       </svg>
     </button>
-  <div class="hero-section">
+  <section class="hero-section" aria-label="Featured band image">
         <img src="viewpointe-38.jpg" alt="guy playing guitar on top of a car" class="header-image">
-    </div>
+    </section>
 
   <header class="header">
     <h1 class="logo">View Pointe</h1>
 
-        <nav class="nav">
+        <nav class="nav" aria-label="Main navigation">
 
             <ul class="nav-links">
-                <li><a href="#">Music</a></li>
-                <li><a href="#">Merch</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#merch">Merch</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
   </header>
   <main id="main-content">
       <div class="page-wrap">
-<section class="merch">
-  <div class="icon-cart">
+      <section id="music" aria-labelledby="music-heading">
+        <h2 id="music-heading">Music</h2>
+        <a href="https://open.spotify.com/artist/09ZJdSh2T5LPJCn3ee59U1?si=MDM8WZg4Q2CqcHEIRzShIQ" target="_blank" rel="noopener noreferrer">
+          <img src="Spotify.png" alt="Spotify logo">
+        </a>
+      </section>
+<section class="merch" id="merch" aria-labelledby="merch-heading">
+  <div class="icon-cart" aria-label="Shopping cart">
     <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
 </svg>
 <span>0</span>
 
   </div>
-<h2>Merch</h2>
+<h2 id="merch-heading">Merch</h2>
 <div class="card-grid">
-  <div class="card">
+  <article class="card">
     <img src="front.png" alt="black t shirt with view pointe name on it">
     <div class="card-body">
       <h3>Black Band T-shirt</h3>
@@ -78,9 +84,9 @@
       <p>Oversized fit black t-shirt with View Pointe</p>
       <button type="button" class="add-to-cart" data-id="1">Add to Cart</button>
     </div>
-  </div>
+  </article>
 
-  <div class="card">
+  <article class="card">
     <img src="croppedshirt.png" alt="black cropped t-shirt with view pointe name and logo on it">
     <div class="card-body">
       <h3>Black Cropped Band T-shirt</h3>
@@ -88,9 +94,9 @@
       <p>Cropped fit black t-shirt with View Pointe logo</p>
       <button type="button" class="add-to-cart" data-id="2">Add to Cart</button>
     </div>
-  </div>
+  </article>
 
-  <div class="card">
+  <article class="card">
     <img src="cdartwork.png" alt="album with cd cover">
     <div class="card-body">
       <h3>All Talk EP</h3>
@@ -98,9 +104,9 @@
       <p>Compact disc with View Pointe's latest EP</p>
       <button type="button" class="add-to-cart" data-id="3">Add to Cart</button>
     </div>
-  </div>
+  </article>
 </div>
-<div class="cartTab">
+<aside class="cartTab" aria-label="Shopping cart details">
   <h3>Shopping Cart</h3>
   <div class="listCart">
     <div class="item">
@@ -127,8 +133,8 @@
 
 
 </section>
-  <section id="contact-form">
-      <h2>Join our fan club</h2>
+  <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Join our fan club</h2>
     <form action="submit_form.php" method="post">
 		<label for="name">Name<span class="required" aria-hidden="true">*</span></label>
 		<input type="text" id="name" name="name" autocomplete="name" required>
@@ -158,7 +164,7 @@
     <footer>
       <p>&copy; 2026 View Pointe Music. All rights reserved.</p>
       <div class="social-icons">
-    <ul>
+    <ul aria-label="Social media links">
       <li><a href="#twitter">Twitter/X</a></li>
       <li><a href="#instagram">Instagram</a></li>
       <li><a href="#youtube">YouTube</a></li>
